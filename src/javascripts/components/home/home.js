@@ -14,7 +14,7 @@ const loginButton = () => {
   <img src=${pic}>
   </button>`;
   utilities.printToDom(domString, 'google');
-  $('#google-auth').click(signMeIn);
+  $('#googleButton').click(signMeIn);
 };
 
 export default { loginButton };
