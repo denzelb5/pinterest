@@ -1,5 +1,10 @@
 import 'bootstrap';
+import home from './components/home/home';
 
 import '../styles/main.scss';
 
-console.error('hi');
+const init = () => {
+  home.loginButton();
+};
+
+init();
