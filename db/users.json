@@ -1,0 +1,10 @@
+{
+  "user1" : {
+    "id": "user1",
+    "name": "James T Kirk",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/72/William_Shatner_Star_Trek.JPG",
+    "email": "jtkirk@me.com",
+    "location": "Gamma 5",
+    "userId": "tyberius777"
+  }
+}
