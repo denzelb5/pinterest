@@ -23,7 +23,7 @@ const logoutEvent = () => {
 const makeABoard = () => {
   boardData.getBoards()
     .then((boards) => {
-      let domString = '';
+      let domString = '<h1>Boards</h1>';
       boards.forEach((board) => {
         domString += `<div class="card" style="width: 18rem;">
       <div class="card-body">
