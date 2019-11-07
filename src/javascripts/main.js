@@ -16,6 +16,7 @@ const init = () => {
   board.logoutEvent();
   boardData.getBoards();
   pinData.getPinsByBoardId('lego');
+  board.makeABoard();
 };
 
 init();
