@@ -4,5 +4,17 @@
     "name": "legoBoard",
     "userId": "jtkirk",
     "description": "lego train layouts"
+  },
+  "board2" : {
+    "id": "recipes",
+    "name": "Recipes",
+    "userId": "jtkirk",
+    "description": "Recipe ideas"
+  },
+  "board3" : {
+    "id": "woodworking",
+    "name": "Woodworking",
+    "userId": "jtkirk",
+    "description": "Cool woodworking projects"
   }
 }
