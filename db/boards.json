@@ -1,20 +1,17 @@
 {
   "board1" : {
-    "id": "lego",
     "name": "legoBoard",
-    "userId": "jtkirk",
+    "uid": "06oBQtUymlfHbtZzvsXpOeyBqRf1",
     "description": "lego train layouts"
   },
   "board2" : {
-    "id": "recipes",
     "name": "Recipes",
-    "userId": "jtkirk",
+    "uid": "06oBQtUymlfHbtZzvsXpOeyBqRf1",
     "description": "Recipe ideas"
   },
   "board3" : {
-    "id": "woodworking",
     "name": "Woodworking",
-    "userId": "jtkirk",
+    "uid": "jtkirk",
     "description": "Cool woodworking projects"
   }
 }
