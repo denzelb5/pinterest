@@ -1,6 +1,7 @@
 import axios from 'axios';
 import apiKeys from '../apiKeys.json';
 
+
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
 const getPinsByBoardId = (boardId) => new Promise((resolve, reject) => {
@@ -12,8 +13,8 @@ const getPinsByBoardId = (boardId) => new Promise((resolve, reject) => {
         demPins[fbId].id = fbId;
         pins.push(demPins[fbId]);
       });
+      console.log('from pinData', pins);
       resolve(pins);
-      console.log(pins);
     })
     .catch((error) => reject(error));
 });

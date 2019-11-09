@@ -1,20 +1,20 @@
 {
   "board1" : {
-    "id": "lego",
     "name": "legoBoard",
-    "userId": "jtkirk",
+    "uid": "06oBQtUymlfHbtZzvsXpOeyBqRf1",
+    "imageUrl": "https://i.pinimg.com/474x/0c/e4/5a/0ce45a6261f2ae97857a2826af041e36.jpg",
     "description": "lego train layouts"
   },
   "board2" : {
-    "id": "recipes",
     "name": "Recipes",
-    "userId": "jtkirk",
+    "uid": "06oBQtUymlfHbtZzvsXpOeyBqRf1",
+    "imageUrl": "https://i.pinimg.com/474x/22/d8/64/22d864a4454f0fd9bb7ea3dddf3d8ac0.jpg",
     "description": "Recipe ideas"
   },
   "board3" : {
-    "id": "woodworking",
     "name": "Woodworking",
-    "userId": "jtkirk",
+    "uid": "06oBQtUymlfHbtZzvsXpOeyBqRf1",
+    "imageUrl": "https://i.pinimg.com/474x/7c/d3/13/7cd31393f8757ab5314f7fd9677cf8c9.jpg",
     "description": "Cool woodworking projects"
   }
 }
