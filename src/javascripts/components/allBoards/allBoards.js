@@ -1,16 +1,16 @@
 import boardData from '../../helpers/data/boardData';
 import soloBoard from '../board/board';
 import utilities from '../../helpers/utilities';
+import './allBoards.scss';
 
 const buildTheBoards = (uid) => {
   boardData.getBoardsByUid(uid)
     .then((boards) => {
-      let domString = '<div class="d-flex flex-wrap" id="boards-section">';
+      let domString = '';
       boards.forEach((board) => {
         domString += soloBoard.makeABoard(board);
-        domString += '</div>';
       });
-      utilities.printToDom(domString, 'boards');
+      utilities.printToDom(domString, 'boards2');
     })
     .catch((error) => console.error(error));
 };

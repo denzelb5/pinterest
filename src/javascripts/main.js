@@ -4,6 +4,8 @@ import apiKeys from './helpers/apiKeys.json';
 import home from './components/home/home';
 import authData from './helpers/data/authData';
 import board from './components/board/board';
+import allPins from './components/allPins/allPins';
+
 
 import '../styles/main.scss';
 
@@ -12,6 +14,8 @@ const init = () => {
   home.loginButton();
   authData.checkLoginStatus();
   board.logoutEvent();
+  allPins.printPins();
+  allPins.getBoardId();
 };
 
 init();
