@@ -2,7 +2,7 @@ import './singlePin.scss';
 
 const createSinglePin = (pin) => {
   let domString = '';
-  domString += `<div class="col-4 pin-card">
+  domString += `<div class="col-4 d-flex flex-wrap pin-card">
   <div class="card">
     <img src="${pin.imageUrl}" class="card-img-top" alt="...">
     <div class="card-body">
