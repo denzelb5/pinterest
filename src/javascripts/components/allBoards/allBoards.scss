@@ -1,6 +1,17 @@
 .soloBoard {
   margin: 2em;
-  }
+*{pointer-events: none;}
+}
+
+#close-button {
+//  *{pointer-events: none;}
+  margin-left: 2em;
+  visibility: visible;
+}
+
+#pins {
+  //  *{pointer-events: auto;}
+}
 
 
 

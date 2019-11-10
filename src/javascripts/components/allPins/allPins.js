@@ -1,21 +1,14 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 import pinData from '../../helpers/data/pinData';
 import singlePin from '../singlePin/singlePin';
 import utilities from '../../helpers/utilities';
 import './allPins.scss';
 
-const getBoardId = () => {
-  $('.card-body').click((e) => {
-    const boardId = e.target.id;
-    console.error('chicken butt', boardId);
-  });
-};
 
 const printPins = (boardId) => {
   pinData.getPinsByBoardId(boardId)
     .then((pins) => {
-      // eslint-disable-next-line no-param-reassign
-      let domString = '';
+      let domString = '<div id="pin-button"><button class="btn btn-danger" id="close-button">Close Pins</button></div>';
       pins.forEach((pin) => {
         domString += singlePin.createSinglePin(pin);
       });
@@ -24,4 +17,4 @@ const printPins = (boardId) => {
     .catch((error) => console.error(error));
 };
 
-export default { printPins, getBoardId };
+export default { printPins };
