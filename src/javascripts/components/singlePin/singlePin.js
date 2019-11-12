@@ -2,8 +2,8 @@ import './singlePin.scss';
 
 const createSinglePin = (pin) => {
   let domString = '';
-  domString += `<div class="col-4 d-flex flex-wrap pin-card">
-  <div class="card">
+  domString += `
+  <div class="card col-4 pin-card">
     <img src="${pin.imageUrl}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">${pin.name}</h5>
@@ -11,7 +11,6 @@ const createSinglePin = (pin) => {
       <a href="${pin.siteUrl}" class="btn btn-primary">Read More</a>
       <button id="${pin.id}" type="button" class="btn btn-danger remove-pin">Delete Pin</button>
     </div>
-  </div>
   </div>`;
   return domString;
 };

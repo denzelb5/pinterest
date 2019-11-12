@@ -16,9 +16,15 @@ const deleteSingleBoard = (e) => {
   const boardId = e.target.id;
   boardData.deleteBoard(boardId)
     .then(() => {
-      allBoards.buildTheBoards();
-    })
-    .catch((error) => console.error(error));
+      pinData.getPinsByBoardId(boardId)
+        .then((thesePins) => {
+          thesePins.forEach((pin) => {
+            pinData.deletePin(pin.id);
+          });
+          allBoards.buildTheBoards();
+        })
+        .catch((error) => console.error(error));
+    });
 };
 
 const deleteSinglePin = (e) => {
