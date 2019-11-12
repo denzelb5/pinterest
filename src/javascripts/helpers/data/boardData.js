@@ -16,13 +16,12 @@ const getBoardsByUid = () => new Promise((resolve, reject) => {
         demBoards[fbId].id = fbId;
         boards.push(demBoards[fbId]);
       });
-      console.error('from boardData', boards);
       resolve(boards);
     })
     .catch((error) => reject(error));
 });
 
 const deleteBoard = (boardId) => axios.delete(`${baseUrl}/boards/${boardId}.json`);
-// const createSnackPosition = (newSnackPosition) => axios.post(`${baseUrl}/snackPositions.json`, newSnackPosition);
+const addBoard = (newBoard) => axios.post(`${baseUrl}/boards.json`, newBoard);
 
-export default { getBoardsByUid, deleteBoard };
+export default { getBoardsByUid, deleteBoard, addBoard };

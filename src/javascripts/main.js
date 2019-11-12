@@ -6,6 +6,7 @@ import authData from './helpers/data/authData';
 import board from './components/board/board';
 import allBoards from './components/allBoards/allBoards';
 import d from './components/delete/delete';
+import create from './components/create/create';
 
 
 import '../styles/main.scss';
@@ -18,6 +19,9 @@ const init = () => {
   allBoards.closePin();
   d.deleteBoardButton();
   d.pinEvent();
+  create.modal();
+  // create.newBoard();
+  // create.buildNewBoard();
 };
 
 init();
