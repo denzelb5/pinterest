@@ -9,6 +9,7 @@ const createSinglePin = (pin) => {
       <h5 class="card-title">${pin.name}</h5>
       <p class="card-text">${pin.description}</p>
       <a href="${pin.siteUrl}" class="btn btn-primary">Read More</a>
+      <button id="${pin.id}" type="button" class="btn btn-danger remove-pin">Delete Pin</button>
     </div>
   </div>
   </div>`;
