@@ -23,7 +23,7 @@ const buildTheBoards = () => {
         domString += soloBoard.makeABoard(board);
       });
       utilities.printToDom(domString, 'boards2');
-      $('body').on('click', '.soloBoard', printPins);
+      $('body').on('click', '.pin-button', printPins);
     })
     .catch((error) => console.error(error));
 };

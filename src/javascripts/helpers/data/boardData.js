@@ -22,4 +22,7 @@ const getBoardsByUid = () => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-export default { getBoardsByUid };
+const deleteBoard = (boardId) => axios.delete(`${baseUrl}/boards/${boardId}.json`);
+// const createSnackPosition = (newSnackPosition) => axios.post(`${baseUrl}/snackPositions.json`, newSnackPosition);
+
+export default { getBoardsByUid, deleteBoard };

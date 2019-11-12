@@ -1,4 +1,7 @@
-
+.pin-container {
+  display: flex;
+  flex-flow: row wrap;
+}
 
 #boards2 {
   background-color: pink;
