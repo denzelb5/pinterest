@@ -19,8 +19,7 @@ const init = () => {
   allBoards.closePin();
   d.deleteBoardButton();
   d.pinEvent();
-  create.modal();
-  // create.newBoard();
+  create.newBoard();
   // create.buildNewBoard();
 };
 
