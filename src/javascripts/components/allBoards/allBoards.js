@@ -22,7 +22,7 @@ const buildTheBoards = () => {
       boards.forEach((board) => {
         domString += soloBoard.makeABoard(board);
       });
-      domString += `<div id="board-button"><button id="add-board" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+      domString += `<div id="board-button"><button id="add-board" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#addBoardModal">
       +
     </button></div>`;
       utilities.printToDom(domString, 'boards2');

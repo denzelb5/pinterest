@@ -11,6 +11,7 @@ import create from './components/create/create';
 
 import '../styles/main.scss';
 
+
 const init = () => {
   firebase.initializeApp(apiKeys.firebaseKeys);
   home.loginButton();
@@ -19,8 +20,8 @@ const init = () => {
   allBoards.closePin();
   d.deleteBoardButton();
   d.pinEvent();
-  create.newBoard();
-  // create.buildNewBoard();
+  // create.newBoard();
+  create.createNewBoard();
 };
 
 init();
