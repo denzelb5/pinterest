@@ -1,6 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
+
 import axios from 'axios';
 import apiKeys from '../apiKeys.json';
 
@@ -16,13 +17,12 @@ const getBoardsByUid = () => new Promise((resolve, reject) => {
         demBoards[fbId].id = fbId;
         boards.push(demBoards[fbId]);
       });
-      console.error('from boardData', boards);
       resolve(boards);
     })
     .catch((error) => reject(error));
 });
 
 const deleteBoard = (boardId) => axios.delete(`${baseUrl}/boards/${boardId}.json`);
-// const createSnackPosition = (newSnackPosition) => axios.post(`${baseUrl}/snackPositions.json`, newSnackPosition);
+const addBoard = (newlyCreatedBoard) => axios.post(`${baseUrl}/boards.json`, newlyCreatedBoard);
 
-export default { getBoardsByUid, deleteBoard };
+export default { getBoardsByUid, deleteBoard, addBoard };

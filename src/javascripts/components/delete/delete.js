@@ -30,9 +30,7 @@ const deleteSingleBoard = (e) => {
 const deleteSinglePin = (e) => {
   pinData.getPinsByBoardId();
   const pinId = e.target.id;
-  console.error('pinId', pinId);
   const boardId = $(e.target).closest('.pin-container').attr('id');
-  console.error('boardId', boardId);
   pinData.deletePin(pinId)
     .then(() => {
       allPins.printPins(boardId);

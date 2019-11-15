@@ -9,9 +9,14 @@
   visibility: visible;
 }
 
-#pins {
-  //  *{pointer-events: auto;}
+#board-button {
+  margin: 2em;
+  #add-board {
+    font-size: 30.5em;
+    color: silver;
+  }
 }
+
 
 
 
