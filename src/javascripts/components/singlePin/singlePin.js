@@ -11,7 +11,7 @@ const createSinglePin = (pin) => {
       <a href="${pin.siteUrl}" class="btn btn-primary">Read More</a>
       <button id="${pin.id}" type="button" class="btn btn-danger remove-pin">Delete Pin</button>
       <!-- Button trigger movePin modal -->
-<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#move-pin-modal">
+<button type="button" id="${pin.id}" class="btn btn-secondary" data-toggle="modal" data-target="#move-pin-modal">
   Move Pin
 </button>
     </div>

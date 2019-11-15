@@ -1,4 +1,4 @@
-// import $ from 'jquery';
+import $ from 'jquery';
 import pinData from '../../helpers/data/pinData';
 import singlePin from '../singlePin/singlePin';
 import utilities from '../../helpers/utilities';
@@ -15,7 +15,7 @@ const printPins = (boardId) => {
       });
       domString += '</div>';
       domString += `
-      <!-- Button trigger modal -->
+      <!-- Button trigger addPin modal -->
         <div id="add-pin-div">
           <button id="add-pin" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#addPinModal">
             +
@@ -28,12 +28,15 @@ const printPins = (boardId) => {
     .catch((error) => console.error(error));
 };
 
-// const movePin = (e) => {
-//   // fix data-target in modal button
-// };
+const movePin = (e) => {
+  e.stopImmediatePropagation();
+  // const { uid } = firebase.auth().currentUser;
+  const boardId = $('.board-div').attr('id');
+  console.error('my boardId is', boardId);
+};
 
-// const moveSelectedPin = () => {
-//   $('#move-pin').click(movePin);
-// };
+const moveSelectedPin = () => {
+  $('#move-pin').click(movePin);
+};
 
-export default { printPins };
+export default { printPins, moveSelectedPin };

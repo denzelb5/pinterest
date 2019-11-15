@@ -1,3 +1,4 @@
+
 import 'bootstrap';
 import firebase from 'firebase';
 import apiKeys from './helpers/apiKeys.json';
@@ -10,6 +11,7 @@ import create from './components/create/create';
 
 
 import '../styles/main.scss';
+import allPins from './components/allPins/allPins';
 
 
 const init = () => {
@@ -22,6 +24,7 @@ const init = () => {
   d.pinEvent();
   create.createNewPin();
   create.createNewBoard();
+  allPins.moveSelectedPin();
 };
 
 init();
