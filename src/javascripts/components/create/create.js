@@ -4,7 +4,9 @@ import 'firebase/auth';
 import boardData from '../../helpers/data/boardData';
 import allBoards from '../allBoards/allBoards';
 import 'bootstrap';
-// import utilities from '../../helpers/utilities';
+import pinData from '../../helpers/data/pinData';
+import allPins from '../allPins/allPins';
+
 
 const createNewBoard = () => {
   // eslint-disable-next-line no-use-before-define
@@ -22,25 +24,35 @@ const newBoard = (e) => {
   };
   boardData.addBoard(newlyCreatedBoard)
     .then(() => {
-      // $('#addBoardModal').modal('hide');
-      // eslint-disable-next-line no-use-before-define
+      $('#addBoardModal').modal('hide');
       allBoards.buildTheBoards(uid);
     })
     .catch((error) => console.error(error));
 };
 
-// const buildNewBoard = (uid) => {
-//   boardData.getBoardsByUid(uid)
-//     .then((boards) => {
-//       let domString = '';
-//       boards.forEach((board) => {
-//         domString += allBoards.buildTheBoards(board);
-//       });
-//       utilities.printToDom(domString, 'boards2');
-//       // eslint-disable-next-line no-use-before-define
-//       $('#create-board').click(newBoard);
-//     })
-//     .catch((error) => console.error(error));
-// };
+const newPin = (e) => {
+  e.stopImmediatePropagation();
+  const { uid } = firebase.auth().currentUser;
+  const boardId = $('.board-div').attr('id');
+  console.error('what is my board Id?', boardId);
+  const newlyCreatedPin = {
+    name: $('#pin-name').val(),
+    description: $('#pin-description').val(),
+    imageUrl: $('#pin-image-url').val(),
+    siteUrl: $('#site-url').val(),
+    boardId,
+    uid,
+  };
+  pinData.addPin(newlyCreatedPin)
+    .then(() => {
+      allPins.printPins(boardId);
+      $('#addPinModal').modal('hide');
+    })
+    .catch((error) => console.error(error));
+};
 
-export default { createNewBoard };
+const createNewPin = () => {
+  $('#add-new-pin').click(newPin);
+};
+
+export default { createNewBoard, createNewPin };

@@ -20,7 +20,7 @@ const init = () => {
   allBoards.closePin();
   d.deleteBoardButton();
   d.pinEvent();
-  // create.newBoard();
+  create.createNewPin();
   create.createNewBoard();
 };
 
