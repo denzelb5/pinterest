@@ -28,4 +28,12 @@ const printPins = (boardId) => {
     .catch((error) => console.error(error));
 };
 
+// const movePin = (e) => {
+//   // fix data-target in modal button
+// };
+
+// const moveSelectedPin = () => {
+//   $('#move-pin').click(movePin);
+// };
+
 export default { printPins };
