@@ -30,6 +30,7 @@ const movePin = (id) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
+const getPinById = (pinId) => axios.get(`${baseUrl}/pins/${pinId}.json`);
 const updatePin = (pinId, updatedPin) => axios.put(`${baseUrl}/pins/${pinId}.json`, updatedPin);
 
 export default {
@@ -38,4 +39,5 @@ export default {
   addPin,
   updatePin,
   movePin,
+  getPinById,
 };

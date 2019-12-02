@@ -36,9 +36,9 @@
   },
   "pin6" : {
     "name": "Lego City Street",
-    "imageUrl": "https://lego-hacks.wohnkultur.space/wp-content/uploads/2019/09/1568203278_293_notitle.jpg",
-    "siteUrl": "https://lego-hacks.wohnkultur.space/4935-2/",
-    "description": "City Street",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Model_railway_station.jpg",
+    "siteUrl": "http://montystrains.net/",
+    "description": "Train Yard",
     "boardId": "lego"
   }
 }
