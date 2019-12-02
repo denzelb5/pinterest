@@ -8,10 +8,9 @@ import board from './components/board/board';
 import allBoards from './components/allBoards/allBoards';
 import d from './components/delete/delete';
 import create from './components/create/create';
-
+import update from './components/update/update';
 
 import '../styles/main.scss';
-import allPins from './components/allPins/allPins';
 
 
 const init = () => {
@@ -24,7 +23,7 @@ const init = () => {
   d.pinEvent();
   create.createNewPin();
   create.createNewBoard();
-  allPins.moveSelectedPin();
+  update.moveSelectedPin();
 };
 
 init();

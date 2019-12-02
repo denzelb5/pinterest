@@ -4,41 +4,41 @@
     "imageUrl": "https://i1.wp.com/brickmodelrailroader.com/wp-content/uploads/2019/10/IMG_5674-e1570631134479.jpg?zoom=2&resize=1038%2C576&ssl=1",
     "siteUrl": "https://brickmodelrailroader.com/index.php/category/layout-design/",
     "description": "lego model railroad",
-    "boardId": "board1"
+    "boardId": "lego"
   },  
     "pin2" : {
     "name": "Printer Cart",
     "imageUrl": "https://i.pinimg.com/474x/f9/d2/da/f9d2dac96e0156f0148ed7ce9a2e6ccd.jpg",
     "siteUrl": "https://www.buildsomething.com/plans/P62CBD2C2375234E4/Small-Printer-Cart",
     "description": "This beautiful printer cart is small but has lots of organization. The small cart is great for a small office, but pretty enough for storing a printer in any room. The sliding plexiglass door can cover up areas that are not needed.",
-    "boardId": "board3"
+    "boardId": "woodworking"
   },
     "pin3" : {
       "name": "GREEN ENCHILADAS CHICKEN SOUP",
       "imageUrl": "https://i.pinimg.com/474x/55/7e/51/557e51a884b698dcbd236b5b11089bbb.jpg",
       "siteUrl": "https://seekinggoodeats.com/green-enchiladas-chicken-soup-keto-slow-cooker-mexican-soup/",
       "description": "Green Enchiladas Chicken Soup (Keto Slow Cooker Mexican Soup), with a creamy broth of green enchiladas sauce, salsa verde, cheeses, and tender shredded chicken, you can’t go wrong with this recipe. Perfect for those busy nights! This Mexican soup recipe is keto and low carb friendly which will make everyone happy! This recipe can be made on a stovetop or in an Instant Pot.",
-      "boardId": "board2"
+      "boardId": "recipes"
   },
   "pin4" : {
     "name": "Strawberry Pie",
     "imageUrl": "https://www.justsotasty.com/wp-content/uploads/2019/04/Strawberry-Pie-9.jpg",
     "siteUrl": "https://www.justsotasty.com/strawberry-pie/",
     "description": "This homemade strawberry pie is an old-fashioned favorite. Sweet, juicy strawberries, flaky pastry and a scoop of vanilla ice cream make this baked strawberry pie the perfect dessert for strawberry season.",
-    "boardId": "board2"
+    "boardId": "recipes"
   },
   "pin5" : {
     "name": "Kreg Jig",
     "imageUrl": "https://i.pinimg.com/564x/a9/c0/8c/a9c08c57d915c9609f10c0cf9a661e00.jpg",
     "siteUrl": "https://www.kregtool.com/store/c48/saw-attachments/p104/production-stop/?source=1669",
     "description": "Create a production-ready stop for your miter saw station, router table, or table saw miter gauge with this heavy-duty stop. It features dual cursors and durable construction that give it accuracy and toughness in one easy-to-use stop.",
-    "boardId": "board3"
+    "boardId": "woodworking"
   },
   "pin6" : {
     "name": "Lego City Street",
     "imageUrl": "https://lego-hacks.wohnkultur.space/wp-content/uploads/2019/09/1568203278_293_notitle.jpg",
     "siteUrl": "https://lego-hacks.wohnkultur.space/4935-2/",
     "description": "City Street",
-    "boardId": "board1"
+    "boardId": "lego"
   }
 }
