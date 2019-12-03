@@ -24,5 +24,11 @@ const getBoardsByUid = () => new Promise((resolve, reject) => {
 
 const deleteBoard = (boardId) => axios.delete(`${baseUrl}/boards/${boardId}.json`);
 const addBoard = (newlyCreatedBoard) => axios.post(`${baseUrl}/boards.json`, newlyCreatedBoard);
+const updateBoard = (boardId, updatedBoard) => axios.put(`${baseUrl}/boards/${boardId}.json`, updatedBoard);
 
-export default { getBoardsByUid, deleteBoard, addBoard };
+export default {
+  getBoardsByUid,
+  deleteBoard,
+  addBoard,
+  updateBoard,
+};

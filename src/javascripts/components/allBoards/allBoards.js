@@ -1,6 +1,4 @@
 import $ from 'jquery';
-// import firebase from 'firebase/app';
-// import 'firebase/auth';
 import boardData from '../../helpers/data/boardData';
 import soloBoard from '../board/board';
 import utilities from '../../helpers/utilities';
