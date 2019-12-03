@@ -1,5 +1,4 @@
 import $ from 'jquery';
-// import firebase from 'firebase/auth'; import 'firebase/app';
 import boardData from '../../helpers/data/boardData';
 import allBoards from '../allBoards/allBoards';
 import pinData from '../../helpers/data/pinData';
@@ -31,7 +30,6 @@ const deleteSinglePin = (e) => {
   pinData.getPinsByBoardId();
   const pinId = e.target.id;
   const boardId = $('.board-div').attr('id');
-  console.error('deleteBoardId', boardId, 'delete-pin-Id', pinId);
   pinData.deletePin(pinId)
     .then(() => {
       allPins.printPins(boardId);
@@ -41,7 +39,6 @@ const deleteSinglePin = (e) => {
 
 const pinEvent = () => {
   $('body').on('click', '.remove-pin', (e) => {
-    console.error('delete pin');
     deleteSinglePin(e);
   });
 };

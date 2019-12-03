@@ -34,7 +34,6 @@ const newPin = (e) => {
   e.stopImmediatePropagation();
   const { uid } = firebase.auth().currentUser;
   const boardId = $('.board-div').attr('id');
-  console.error('what is my board Id?', boardId);
   const newlyCreatedPin = {
     name: $('#pin-name').val(),
     description: $('#pin-description').val(),
