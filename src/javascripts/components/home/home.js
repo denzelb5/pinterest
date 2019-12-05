@@ -13,7 +13,7 @@ const loginButton = () => {
   const domString = `<button id="googleButton" class="btn">
   <img id="google-image" src=${pic}>
   </button>`;
-  utilities.printToDom(domString, 'google');
+  utilities.printToDom(domString, 'login');
   $('#googleButton').click(signMeIn);
 };
 
